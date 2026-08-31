@@ -1,9 +1,9 @@
 #pragma once
 
-#include "robobites/nav/Types.hpp"
+#include "caldova/nav/Types.hpp"
 #include <vector>
 
-namespace robobites::nav {
+namespace caldova::nav {
 
 class CostGrid {
 public:
@@ -25,4 +25,4 @@ public:
     PathBuffer plan(const RouteMap& route, const SensorFrame& frame) const;
 };
 
-}
+}

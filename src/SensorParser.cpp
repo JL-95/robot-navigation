@@ -1,11 +1,11 @@
-#include "robobites/nav/SensorParser.hpp"
+#include "caldova/nav/SensorParser.hpp"
 
 #include <cstring>
 #include <fstream>
 #include <sstream>
 #include <stdexcept>
 
-namespace robobites::nav {
+namespace caldova::nav {
 namespace {
 
 std::uint16_t readU16(const std::vector<std::uint8_t>& bytes, std::size_t at) {
@@ -69,4 +69,4 @@ RouteMap SensorParser::loadRouteFile(const std::string& path) const {
     return route;
 }
 
-}
+}

@@ -1,11 +1,11 @@
 #pragma once
 
-#include "robobites/nav/Types.hpp"
+#include "caldova/nav/Types.hpp"
 #include <cstdint>
 #include <string>
 #include <vector>
 
-namespace robobites::nav {
+namespace caldova::nav {
 
 class SensorParser {
 public:
@@ -13,4 +13,4 @@ public:
     RouteMap loadRouteFile(const std::string& path) const;
 };
 
-}
+}

@@ -1,6 +1,6 @@
-#include "robobites/nav/RouteCache.hpp"
+#include "caldova/nav/RouteCache.hpp"
 
-namespace robobites::nav {
+namespace caldova::nav {
 
 void RouteCache::remember(const PathBuffer& path) {
     lastPoints_ = path.points.data();
@@ -16,4 +16,4 @@ PathBuffer RouteCache::restore() const {
     return path;
 }
 
-}
+}

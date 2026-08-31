@@ -1,9 +1,9 @@
 #pragma once
 
-#include "robobites/nav/Types.hpp"
+#include "caldova/nav/Types.hpp"
 #include <string>
 
-namespace robobites::nav {
+namespace caldova::nav {
 
 class Telemetry {
 public:
@@ -11,4 +11,4 @@ public:
     std::string nextCommand(const PathBuffer& path) const;
 };
 
-}
+}

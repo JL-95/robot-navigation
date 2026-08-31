@@ -1,9 +1,9 @@
 #pragma once
 
-#include "robobites/nav/Types.hpp"
+#include "caldova/nav/Types.hpp"
 #include <cstddef>
 
-namespace robobites::nav {
+namespace caldova::nav {
 
 class RouteCache {
 public:
@@ -15,4 +15,4 @@ private:
     std::size_t lastCount_ = 0;
 };
 
-}
+}

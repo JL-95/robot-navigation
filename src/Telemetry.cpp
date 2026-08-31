@@ -1,8 +1,8 @@
-#include "robobites/nav/Telemetry.hpp"
+#include "caldova/nav/Telemetry.hpp"
 
 #include <sstream>
 
-namespace robobites::nav {
+namespace caldova::nav {
 
 std::string Telemetry::summarizeRoute(const RouteMap& route) const {
     std::ostringstream out;
@@ -27,4 +27,4 @@ std::string Telemetry::nextCommand(const PathBuffer& path) const {
     return out.str();
 }
 
-}
+}

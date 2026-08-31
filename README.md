@@ -1,6 +1,6 @@
 # Robot Navigation
 
-Robot Navigation provides local path planning and sensor packet handling for Robobites delivery robots. It turns compact lidar packets and route files into short navigation plans that can be consumed by the rover control loop.
+Robot Navigation provides local path planning and sensor packet handling for Caldova delivery robots. It turns compact lidar packets and route files into short navigation plans that can be consumed by the rover control loop.
 
 ## Features
 
@@ -12,7 +12,7 @@ Robot Navigation provides local path planning and sensor packet handling for Rob
 
 ## Layout
 
-- `include/robobites/nav/` public headers
+- `include/caldova/nav/` public headers
 - `src/` implementation and command entry point
 - `config/` route file used for local runs
 
@@ -33,7 +33,7 @@ cmake --build build
 ## Usage
 
 ```powershell
-.\build\robobites-nav.exe config\downtown.route
+.\build\caldova-nav.exe config\downtown.route
 ```
 
 The route file starts with grid dimensions, followed by one waypoint per line:
@@ -45,4 +45,4 @@ market 8 4
 customer 17 12
 ```
 
-The executable loads the route, ingests a sensor frame, computes a path, and prints the next rover command.
+The executable loads the route, ingests a sensor frame, computes a path, and prints the next rover command.

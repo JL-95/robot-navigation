@@ -1,10 +1,10 @@
-#include "robobites/nav/PathPlanner.hpp"
+#include "caldova/nav/PathPlanner.hpp"
 
 #include <algorithm>
 #include <cmath>
 #include <stdexcept>
 
-namespace robobites::nav {
+namespace caldova::nav {
 namespace {
 
 int stepToward(int current, int target) {
@@ -86,4 +86,4 @@ PathBuffer PathPlanner::plan(const RouteMap& route, const SensorFrame& frame) co
     return path;
 }
 
-}
+}

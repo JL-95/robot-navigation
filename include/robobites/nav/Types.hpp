@@ -5,7 +5,7 @@
 #include <string>
 #include <vector>
 
-namespace robobites::nav {
+namespace caldova::nav {
 
 struct Waypoint {
     std::string name;
@@ -41,4 +41,4 @@ struct PathBuffer {
     std::vector<PathPoint> points;
 };
 
-} 
+} 
